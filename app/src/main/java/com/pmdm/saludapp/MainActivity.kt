@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             val name = etName.text.toString()
             if (name.isNotEmpty()) {
                 Snackbar.make(btnhello, "Hola $name!", Snackbar.LENGTH_LONG)
-                    .setAnchorView(btnhello)
+                    .setAnchorView(etName)
                     .setAction("RESET") { etName.setText(null) }
                     .show()
             } else {
